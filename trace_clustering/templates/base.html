@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Título -->
+    <title>Trace Clustering</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/icon-img/icon.ico' %}">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{% static 'site.css' %}">
+
+</head>
+<body>
+
+    {% block content %} {%endblock%}
+ <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100 d-flex flex-wrap align-items-center justify-content-between">
+                    <!-- Footer Social Info -->
+                    <div class="footer-social-info text-right">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                    <!-- Footer Logo -->
+                    <div class="footer-logo">
+                         <a href="{% url 'index' %}"><img src="{% static 'img/test/logo_fiap.PNG' %}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ##### All Javascript Files ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+</body>
+
+</html>

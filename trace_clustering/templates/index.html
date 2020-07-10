@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content%}
+    <!-- Preloader -->
+    <div id="preloader">
+        <i class="circle-preloader"></i>
+        <img src="{% static 'img/test/loading.png' %}" alt="">
+    </div>
+
+    <!-- Search Wrapper -->
+    <div class="search-wrapper">
+        <!-- Close Btn -->
+        <div class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form action="#" method="post">
+                        <input type="search" name="search" placeholder="O que está procurando...">
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'partials/menu.html' %}
+
+    <!-- ##### Best Receipe Area Start ##### -->
+    <section class="best-receipe-area">
+        <div class="container">
+            <div class="row">
+                <!-- Single Best Receipe Area -->
+                <div class="col-30 col-sm-30 col-lg-60">
+                    <div class="single-best-receipe-area mb-30">
+                        <div class="receipe-content">
+                            <a href="receita.html">
+                                <h5>Descrever sobre a aplicação</h5>
+                                <h5>Em grandes empresas, vários são processos executados a todo momento.
+Como muitos desses processos são executados com ajuda dos sistemas de TI, eles deixam “pegadas digitais”, o que chamamos de log de eventos (Dumas et al., 2018).
+Considerando um processo em particular, define-se como trace uma sequência de execuções das atividades relacionadas ao processo.
+Cada uma dessas execuções é dita ser um evento, o qual pode ser descrito em termos de atividade executada, hora e data de execução, recursos envolvidos, entre outros.
+Uma coleção de traces compõe um log de eventos, no qual são registradas, portanto, as execuções de um processo.
+São geradas grandes quantidades de dados que, se analisadas rapidamente, podem gerar valor significativo para a empresa.
+</h5>
+                            </a>
+                            <img src="{% static 'img/test/trace_1.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Best Receipe Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+{% endblock %}

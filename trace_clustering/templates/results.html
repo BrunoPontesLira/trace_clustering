@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content%}
+    <!-- Preloader -->
+    <div id="preloader">
+        <i class="circle-preloader"></i>
+        <img src="{% static 'img/test/loading.png' %}" alt="">
+    </div>
+
+    <!-- Search Wrapper -->
+    <div class="search-wrapper">
+        <!-- Close Btn -->
+        <div class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form action="#" method="post">
+                        <input type="search" name="search" placeholder="O que está procurando...">
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'partials/menu.html' %}
+
+    <!-- ##### Best Receipe Area Start ##### -->
+    <section class="best-receipe-area">
+        <div class="container">
+             <div class="row">
+                        <div class="receipe-headline my-5">
+                            <h2>Silhouettes</h2>
+                        </div>
+             </div>
+            <div class="row">
+                <!-- Single Best Receipe Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-best-receipe-area mb-30">
+                        <img src="{% static 'img/silhouettes-img/individual_specialist_binary_k2.png' %}" alt="">
+                        <div class="receipe-content">
+                            <a>
+                                <h5>Individual specialist binary k2</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-best-receipe-area mb-30">
+                        <img src="{% static 'img/silhouettes-img/individual_specialist_binary_k3.png' %}" alt="">
+                        <div class="receipe-content">
+                            <a>
+                                <h5>Individual specialist binary k3</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-best-receipe-area mb-30">
+                        <img src="{% static 'img/silhouettes-img/individual_specialist_binary_k5.png' %}" alt="">
+                        <div class="receipe-content">
+                            <a>
+                                <h5>Individual specialist binary k5</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+             <div class="row">
+                        <div class="receipe-headline my-5">
+                            <h2>Duração</h2>
+                        </div>
+             </div>
+            <div class="row">
+                <!-- Single Best Receipe Area -->
+                <div class="col-12 col-sm-20 col-lg-30">
+                    <div class="single-best-receipe-area mb-30">
+                        <img src="{% static 'img/durations-img/individual_specialist_binary_k2.png' %}" alt="">
+                        <div class="receipe-content">
+                            <a>
+                                <h5>Individual specialist binary k2</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-20 col-lg-30">
+                    <div class="single-best-receipe-area mb-30">
+                        <img src="{% static 'img/durations-img/individual_specialist_binary_k3.png' %}" alt="">
+                        <div class="receipe-content">
+                            <a>
+                                <h5>Individual specialist binary k3</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-20 col-lg-30">
+                    <div class="single-best-receipe-area mb-30">
+                        <img src="{% static 'img/durations-img/individual_specialist_binary_k5.png' %}" alt="">
+                        <div class="receipe-content">
+                            <a>
+                                <h5>Individual specialist binary k5</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ##### Best Receipe Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+{% endblock %}

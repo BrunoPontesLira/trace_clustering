@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content%}
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <i class="circle-preloader"></i>
+        <img src="{% static 'img/test/loading.png' %}" alt="">
+    </div>
+
+    <!-- Search Wrapper -->
+    <div class="search-wrapper">
+        <!-- Close Btn -->
+        <div class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form action="#" method="post">
+                        <input type="search" name="search" placeholder="O que está procurando...">
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'partials/menu.html' %}
+
+    <!-- ##### Best Receipe Area Start ##### -->
+    <section class="best-receipe-area">
+        <div class="container">
+            <div class="row">
+        <!-- Receipe Content Area -->
+        <div class="receipe-content-area">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="receipe-headline my-5">
+                            <h2>Configurações</h2>
+                            <div class="receipe-duration">
+                                <h6>1) Uploading: arquivo de log no formato "csv"</h6>
+                                <h6>2) Set algorito: K-means</h6>
+                                <h6>3) Set K: quantidade de grupos para K-means</h6>
+                            </div>
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <!-- Single Preparation Step -->
+                        <div class="single-preparation-step d-flex">
+                         <h3>1) Upload   </h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <!-- Single Preparation Step -->
+                        <div class="single-preparation-step d-flex">
+                                <div class="uploading">
+                                    <form method="post" enctype="multipart/form-data">
+                                        {% csrf_token %}
+                                        <input type="file" name="document">
+                                        <button type="submit">Upload file</button>
+                                    </form>
+                                    {% if url %}
+                                        <p>Uploaded file: <a href="{{ url }}">{{ url }}</a></p>
+                                        {% endif %}
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="classynav">
+                        <div class="col-12 col-lg-2 text-right">
+                            <button type="submit" class="btn delicious-btn">RUN</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ingredientes -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-best-receipe-area mb-30">
+                        <div class="receipe-content">
+                            <a href="receita.html">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
