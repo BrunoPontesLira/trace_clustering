@@ -106,5 +106,3 @@ Para contribuir com código, envie um pull request.
 ## Licença
 
 Este projeto é distribuído para fins acadêmicos. Entre em contato para outros usos.
-
-![Alt text](./esquema_grafico-trace_clustering.png?raw=true "Title")
