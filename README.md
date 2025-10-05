@@ -99,7 +99,7 @@ Para contribuir com código, envie um pull request.
 - **Bruno Pontes Lira**  
   [GitHub](https://github.com/BrunoPontesLira)
 
-![Esquema do Projeto](./esquema_grafico-trace_clustering.png?raw=true)
+![Esquema do Projeto](./esquema_grafico.png?raw=true)
 
 ---
 
