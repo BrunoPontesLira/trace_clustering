@@ -2,8 +2,6 @@
 
 # Trace Clustering
 
-![Esquema do Projeto](./esquema_grafico-trace_clustering.png?raw=true)
-
 ## Sobre o Projeto
 
 O **Trace Clustering** é um trabalho acadêmico focado em mineração de processos, utilizando algoritmos de agrupamento (clustering) para analisar e extrair padrões de logs de eventos. O projeto oferece scripts para pré-processamento dos dados, geração de matrizes de features e aplicação do K-Means, além de uma interface web (Django) para visualização dos resultados.
@@ -100,6 +98,8 @@ Para contribuir com código, envie um pull request.
 
 - **Bruno Pontes Lira**  
   [GitHub](https://github.com/BrunoPontesLira)
+
+![Esquema do Projeto](./esquema_grafico-trace_clustering.png?raw=true)
 
 ---
 
